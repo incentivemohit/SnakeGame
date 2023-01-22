@@ -34,7 +34,6 @@ window.onload = function () {
 function update() {
   if (gameOver) {
     location.reload();
-    return;
   }
 
   context.fillStyle = "black";
@@ -120,5 +119,21 @@ function moveDown() {
   if (velocityX != -1) {
     velocityX = 0;
     velocityY = 1;
+  }
+}
+
+//play and pause audio
+
+document.getElementById("musicButton").addEventListener("click", togglePlay);
+
+function togglePlay() {
+  var myAudio = document.getElementById("myAudio");
+  var btn = document.getElementById("musicButton");
+  if (myAudio.paused && btn.value == "OFF") {
+    myAudio.play();
+    btn.value = "ON";
+  } else {
+    myAudio.pause();
+    btn.value = "OFF";
   }
 }
