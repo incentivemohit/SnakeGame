@@ -1,0 +1,31 @@
+@media screen and (max-width: 600px) {
+  #board {
+    width: 250px;
+  }
+  #leftButton {
+    height: 60px;
+  }
+  #upButton {
+    height: 60px;
+  }
+  #rightButton {
+    height: 60px;
+  }
+  #downButton {
+    height: 60px;
+  }
+}
+@media screen and (min-width: 600px) {
+  #leftButton {
+    height: 100px;
+  }
+  #upButton {
+    height: 100px;
+  }
+  #rightButton {
+    height: 100px;
+  }
+  #downButton {
+    height: 100px;
+  }
+}
